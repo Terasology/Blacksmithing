@@ -1,11 +1,10 @@
-// Copyright 2020 The Terasology Foundation
+// Copyright 2021 The Terasology Foundation
 // SPDX-License-Identifier: Apache-2.0
 
 package org.terasology.smithing.system;
 
 import org.joml.Vector3f;
 import org.terasology.engine.core.Time;
-import org.terasology.engine.entitySystem.Component;
 import org.terasology.engine.entitySystem.entity.EntityManager;
 import org.terasology.engine.entitySystem.entity.EntityRef;
 import org.terasology.engine.entitySystem.event.ReceiveEvent;
@@ -17,14 +16,15 @@ import org.terasology.engine.entitySystem.systems.RegisterSystem;
 import org.terasology.engine.logic.common.ActivateEvent;
 import org.terasology.engine.logic.delay.DelayManager;
 import org.terasology.engine.logic.delay.DelayedActionTriggeredEvent;
-import org.terasology.module.inventory.components.InventoryComponent;
-import org.terasology.module.inventory.systems.InventoryManager;
-import org.terasology.module.inventory.systems.InventoryUtils;
 import org.terasology.engine.logic.inventory.ItemComponent;
 import org.terasology.engine.logic.location.LocationComponent;
 import org.terasology.engine.particles.components.ParticleEmitterComponent;
 import org.terasology.engine.registry.In;
 import org.terasology.engine.world.block.regions.BlockRegionComponent;
+import org.terasology.gestalt.entitysystem.component.Component;
+import org.terasology.module.inventory.components.InventoryComponent;
+import org.terasology.module.inventory.systems.InventoryManager;
+import org.terasology.module.inventory.systems.InventoryUtils;
 import org.terasology.smithing.component.CharcoalPitComponent;
 import org.terasology.smithing.event.OpenCharcoalPitRequest;
 import org.terasology.smithing.event.ProduceCharcoalRequest;
